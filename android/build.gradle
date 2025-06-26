@@ -13,6 +13,9 @@ rootProject.allprojects {
     repositories {
         google()
         mavenCentral()
+        flatDir {
+            dirs 'libs'
+        }
     }
 }
 
@@ -51,6 +54,6 @@ dependencies {
     implementation 'androidx.annotation:annotation:1.5.0'
 
     // Use local AAR due to unavailability of original binaries.
-    implementation(name: 'ffmpeg-kit-full-gpl', ext: 'aar')
+    implementation(name: 'ffmpeg-kit-full-gpl-6.0-2', ext: 'aar')
     //implementation 'com.arthenica:ffmpeg-kit-full-gpl:6.0-2'
 }
